@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+  body {
+    margin: 0;
+    font-family: system-ui, sans-serif;
+  }
+  .kontener {
+    height: var(--vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  @media (prefers-color-scheme: dark) {
+    body {
+      background-color: rgb(30, 30, 30);
+      color: white;
+    }
+  }
+  </style>
+  <title>smh</title>
+</head>
+<body>
+  <div class="kontener">
+    <h1>Hello Stranger</h1>
+    <p>There is nothing here...</p>
+    <img src="a.gif">
+    <p>...except this little cute fox</p>
+  </div>
+
+  <script>
+    const vh = window.innerHeight
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+  </script>
+</body>
+</html>
